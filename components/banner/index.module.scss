@@ -12,6 +12,7 @@
 
 .container {
     @include container;
+    padding-left: 252px;
 }
 
 .logo {
@@ -26,10 +27,10 @@
 
     &__btn {
         @include regular-text;
+        @include basic-transition;
         color: $white;
         background-color: $black;
         padding: 16px 25px;
-        transition: all 0.5s ease-in-out;
 
         &:hover {
             color: $black;

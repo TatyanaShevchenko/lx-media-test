@@ -16,11 +16,6 @@
     font-display: swap;
 }
 
-.wrapper {
-    font-family: 'Proxima-Nova';
-    font-weight: 400;
-}
-
 // containers
 @mixin container {
     max-width: 1640px;
@@ -28,20 +23,72 @@
     margin: 0 auto;
 }
 
+//transitions
+@mixin basic-transition {
+    transition: all 0.3s linear;
+}
+
 //typography
+@mixin little-text {
+    font-family: 'Proxima-Nova';
+    font-size: 14px;
+    font-weight: 400;
+}
+
 @mixin regular-text {
+    font-family: 'Proxima-Nova';
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
 }
 
+@mixin medium-text {
+    font-family: 'Proxima-Nova';
+    font-style: 18px;
+    line-height: 35px;
+    font-weight: 400;
+}
+
+@mixin content-text {
+    font-family: 'Proxima-Nova';
+    font-size: 25px;
+    line-height: 35px;
+    font-weight: 400;
+}
+
 @mixin bold-text {
+    font-family: 'Proxima-Nova';
     font-size: 30px;
     line-height: 35px;
     font-weight: 700;
 }
 
-@mixin little-text {
-    font-size: 14px;
-    font-weight: 400;
+//common styles
+
+@mixin section-link {
+    @include regular-text;
+    @include basic-transition;
+    color: $grey;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: -20px;
+        transform: translate(0, -50%);
+        width: 14px;
+        height: 9px;
+        background-image: url(/images/icons/link_arrow.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &:hover {
+        color: $orange;
+        &::after {
+            // TO DO add svg as component to change styles
+            color: $orange;
+        }
+    }
 }

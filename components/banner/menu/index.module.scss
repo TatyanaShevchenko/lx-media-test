@@ -1,23 +1,26 @@
 @import '../../../styles/index.module.scss';
 
 .nav {
-    display: grid;
-    grid-gap: 45px;
-    grid-template-columns: repeat(5, 1fr);
+    display: flex;
     margin-left: 100px;
 }
 
 .nav__link {
     @include regular-text;
+    @include basic-transition;
     color: $black;
+    position: relative;
+
+    &:hover {
+        color: $white;
+        border-bottom: 1px solid $white;
+    }
 
     &:nth-child(1) {
-        position: relative;
-
         &::after {
             position: absolute;
             content: '';
-            background-image: url(/images/icons/menu_arrow.png);
+            background-image: url(/images/icons/menu_arrow.svg);
             background-size: cover;
             background-repeat: no-repeat;
             width: 9px;
@@ -26,5 +29,9 @@
             transform: translate(0, -50%);
             right: -16px;
         }
+    }
+
+    & + & {
+        margin-left: 45px;
     }
 }

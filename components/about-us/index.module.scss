@@ -1,0 +1,28 @@
+@import '../../styles/index.module.scss';
+
+.about {
+    @include container;
+    padding-top: 210px;
+    padding-bottom: 165px;
+    display: flex;
+
+    &__title {
+        @include regular-text;
+        color: $grey;
+        min-width: 165px;
+        margin-right: 250px;
+    }
+
+    &__content {
+        max-width: 812px;
+    }
+
+    &__text {
+        @include content-text;
+        margin-bottom: 13px;
+    }
+
+    &__link {
+        @include section-link;
+    }
+}

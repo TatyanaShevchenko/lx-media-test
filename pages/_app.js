@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
 import { Banner } from '../components/banner'
-import styles from '../styles/index.module.scss'
+import { AboutUs } from '../components/about-us'
 
 export default function Home() {
     return (
@@ -23,8 +23,9 @@ export default function Home() {
                     crossOrigin=""
                 />
             </Head>
-            <div className={styles.wrapper}>
+            <div>
                 <Banner />
+                <AboutUs />
             </div>
         </div>
     )
