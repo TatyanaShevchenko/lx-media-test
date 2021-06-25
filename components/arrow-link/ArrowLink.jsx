@@ -25,7 +25,7 @@ export const ArrowLink = ({ position, scroll, children }) => {
                     {children}
                 </a>
             )}
-            {/* if scroll is not in props, render usual a */}
+            {/* if scroll is not in props, render usual a цшер ркуа */}
             {!scroll && (
                 <a
                     href="#"

@@ -9,6 +9,7 @@
         display: flex;
         justify-content: space-between;
         height: 260px;
+        position: relative;
     }
 
     &__text {
@@ -28,7 +29,8 @@
 
     &__rotate {
         position: absolute;
-        right: 140px;
+        top: 50px;
+        right: -40px;
         transform: rotate(90deg);
     }
 
