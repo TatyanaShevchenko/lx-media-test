@@ -2,6 +2,7 @@ import Head from 'next/head'
 
 import { Banner } from '../components/banner'
 import { AboutUs } from '../components/about-us'
+import { Career } from '../components/career'
 
 export default function Home() {
     return (
@@ -26,6 +27,7 @@ export default function Home() {
             <div>
                 <Banner />
                 <AboutUs />
+                <Career />
             </div>
         </div>
     )

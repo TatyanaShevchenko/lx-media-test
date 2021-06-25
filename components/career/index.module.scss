@@ -1,4 +1,68 @@
 @import '../../styles/index.module.scss';
 
+.wrapper {
+    background-color: rgba($grey, 0.05);
+}
 .career {
+    @include container;
+
+    padding-top: 55px;
+    padding-bottom: 80px;
+    display: flex;
+    align-items: center;
+
+    &__info {
+        display: grid;
+        grid-template-columns: 1fr 450px;
+        grid-template-areas:
+            'title content'
+            'slogan slogan'
+            '. text ';
+    }
+    &__title {
+        @include regular-text;
+
+        grid-area: title;
+        color: $grey;
+        min-width: 415px;
+    }
+
+    &__content {
+        grid-area: content;
+        max-width: 460px;
+
+        &__text {
+            @include content-text;
+
+            margin-bottom: 13px;
+        }
+
+        &__link {
+            @include section-link;
+        }
+    }
+
+    &__image {
+        max-width: 675px;
+        margin-left: 90px;
+    }
+
+    &__slogan {
+        @include extra-big-text;
+
+        grid-area: slogan;
+        color: rgba($black, 0.1);
+        padding: 184px 0 275px;
+
+        &_bold {
+            font-weight: 700;
+        }
+    }
+
+    &__text {
+        @include career-text;
+
+        grid-area: text;
+        max-width: 400px;
+    }
 }
