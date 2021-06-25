@@ -1,0 +1,50 @@
+@import '../../styles/index.module.scss';
+
+.arrow_link {
+    @include regular-text;
+    display: flex;
+    align-items: center;
+
+    &__href {
+        @include basic-transition;
+        color: $grey;
+        position: relative;
+
+        &_orange {
+            color: $orange;
+        }
+    }
+
+    &:hover {
+        .arrow_link__href {
+            color: $orange;
+        }
+        .arrow_link__icon_before,
+        .arrow_link__icon_after {
+            path {
+                fill: $orange;
+            }
+        }
+        .arrow_link__icon_before {
+            padding-left: 23px;
+        }
+    }
+}
+
+.arrow_link__icon_before,
+.arrow_link__icon_after {
+    @include basic-transition;
+}
+
+.arrow_link__icon_before {
+    position: absolute;
+    left: -27px;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(180deg);
+    path {
+        fill: $orange;
+    }
+}
+.arrow_link__icon_after {
+    margin-left: 6px;
+}

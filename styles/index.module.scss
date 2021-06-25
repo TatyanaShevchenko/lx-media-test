@@ -83,33 +83,3 @@
     font-size: 110px;
     line-height: 135px;
 }
-
-//common styles
-
-@mixin section-link {
-    @include regular-text;
-    @include basic-transition;
-    color: $grey;
-    position: relative;
-
-    &::after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        right: -20px;
-        transform: translate(0, -50%);
-        width: 14px;
-        height: 9px;
-        background-image: url(/images/icons/link_arrow.svg);
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-    &:hover {
-        color: $orange;
-        &::after {
-            // TO DO add svg as component to change styles
-            color: $orange;
-        }
-    }
-}

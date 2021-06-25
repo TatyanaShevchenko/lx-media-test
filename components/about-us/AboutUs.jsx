@@ -1,3 +1,4 @@
+import { ArrowLink } from '../arrow-link'
 import styles from './index.module.scss'
 
 export const AboutUs = () => {
@@ -12,9 +13,7 @@ export const AboutUs = () => {
                     consultant and developer with software expertise in these
                     fields.
                 </p>
-                <a href="#" className={styles.about__link}>
-                    About us
-                </a>
+                <ArrowLink position="after">About us</ArrowLink>
             </div>
         </section>
     )

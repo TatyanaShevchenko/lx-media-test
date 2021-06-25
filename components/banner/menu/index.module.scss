@@ -5,6 +5,17 @@
     margin-left: 100px;
 }
 
+.icon__link {
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    margin-left: 8px;
+    height: 6px;
+    width: 9px;
+}
+
 .nav__link {
     @include regular-text;
     @include basic-transition;
@@ -60,10 +71,10 @@
 }
 
 .nav__open {
-    @include basic-transition;
     cursor: pointer;
 
     &::after {
+        transition: height 0.2s linear;
         position: absolute;
         opacity: 0;
         top: 0;

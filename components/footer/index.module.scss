@@ -26,35 +26,10 @@
         line-height: 25px;
     }
 
-    &__totop {
-        @include regular-text;
-        @include basic-transition;
-        color: $orange;
-        position: relative;
-        transform: rotate(90deg) translate(50%, 50%);
-        display: inline-block;
-        height: 20px;
-
-        //TO DO svg + transition, fix button position
-
-        &::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: -30px;
-            transform: translate(0, -50%) rotate(180deg);
-            width: 14px;
-            height: 9px;
-            background-image: url(/images/icons/link_arrow.svg);
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-        &:hover {
-            &::before {
-                left: -40px;
-            }
-        }
+    &__rotate {
+        position: absolute;
+        right: 140px;
+        transform: rotate(90deg);
     }
 
     &__bottom {

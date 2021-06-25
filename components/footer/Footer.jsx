@@ -1,5 +1,7 @@
-import styles from './index.module.scss'
 import { animateScroll as scroll } from 'react-scroll'
+
+import { ArrowLink } from '../arrow-link'
+import styles from './index.module.scss'
 
 export const Footer = () => {
     return (
@@ -12,12 +14,9 @@ export const Footer = () => {
                         expertise in&nbsp;Big Data, AI and&nbsp;Blockchain.
                     </p>
                 </div>
-                <a
-                    className={styles.footer__totop}
-                    onClick={scroll.scrollToTop}
-                >
-                    Back to the top
-                </a>
+                <div className={styles.footer__rotate}>
+                    <ArrowLink position="before">Back to the top</ArrowLink>
+                </div>
             </div>
             <div className={styles.footer__bottom}>
                 <p className={styles.footer__copyright}>

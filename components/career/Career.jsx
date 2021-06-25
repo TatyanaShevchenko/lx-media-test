@@ -1,3 +1,4 @@
+import { ArrowLink } from '../arrow-link'
 import styles from './index.module.scss'
 
 export const Career = () => {
@@ -14,9 +15,7 @@ export const Career = () => {
                             to the future. No business suits, but racing suits.
                             No boredom, just short distances.
                         </p>
-                        <a href="#" className={styles.career__content__link}>
-                            Careers at KTM
-                        </a>
+                        <ArrowLink position="after">Careers at KTM</ArrowLink>
                     </div>
                     <p className={styles.career__slogan}>
                         <span className={styles.career__slogan_bold}>You.</span>{' '}

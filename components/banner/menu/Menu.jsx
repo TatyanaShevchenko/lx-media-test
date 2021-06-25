@@ -1,4 +1,6 @@
 import classnames from 'classnames'
+
+import Arrow from '../../../public/images/icons/menu_arrow.svg'
 import styles from './index.module.scss'
 
 export const Menu = () => {
@@ -51,9 +53,12 @@ export const Menu = () => {
                             </li>
                         </ul>
                     </div>
-                    <a href="#" className={styles.nav__open__link}>
-                        Streams
-                    </a>
+                    <div className={styles.icon__link}>
+                        <a href="#" className={styles.nav__open__link}>
+                            Streams
+                        </a>
+                        <Arrow className={styles.arrow} />
+                    </div>
                 </div>
             </div>
 
