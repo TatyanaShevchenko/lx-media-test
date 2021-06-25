@@ -1,0 +1,66 @@
+@import '../../styles/index.module.scss';
+
+.banner {
+    background: linear-gradient(rgba($white, 0.3), rgba($white, 0.5)),
+        url('/images/main_banner.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 1079px;
+}
+
+.container {
+    @include container;
+}
+
+.logo {
+    position: absolute;
+}
+
+.header {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__btn {
+        @include regular-text;
+        color: $white;
+        background-color: $black;
+        padding: 16px 25px;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+            color: $black;
+            background-color: $white;
+        }
+    }
+}
+
+.content {
+    max-width: 385px;
+    margin-top: 385px;
+
+    &__title {
+        @include regular-text;
+    }
+    &__text {
+        @include bold-text;
+        margin-bottom: 20px;
+    }
+    &__line {
+        height: 370px;
+        width: 1px;
+        background-color: $orange;
+        position: relative;
+
+        &::after {
+            @include little-text;
+            position: absolute;
+            content: 'Scroll';
+            bottom: 0;
+            left: 16px;
+        }
+    }
+}

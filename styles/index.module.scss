@@ -1,0 +1,47 @@
+@import './colors.module.scss';
+
+@font-face {
+    font-family: 'Proxima-Nova';
+    src: url('/fonts/Proxima-Nova.otf');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima-Nova';
+    src: url('/fonts/Proxima-Nova-bold.otf');
+    font-style: bold;
+    font-weight: 700;
+    font-display: swap;
+}
+
+.wrapper {
+    font-family: 'Proxima-Nova';
+    font-weight: 400;
+}
+
+// containers
+@mixin container {
+    max-width: 1640px;
+    padding: 0 140px;
+    margin: 0 auto;
+}
+
+//typography
+@mixin regular-text {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+@mixin bold-text {
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 700;
+}
+
+@mixin little-text {
+    font-size: 14px;
+    font-weight: 400;
+}

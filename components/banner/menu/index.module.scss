@@ -1,0 +1,30 @@
+@import '../../../styles/index.module.scss';
+
+.nav {
+    display: grid;
+    grid-gap: 45px;
+    grid-template-columns: repeat(5, 1fr);
+    margin-left: 100px;
+}
+
+.nav__link {
+    @include regular-text;
+    color: $black;
+
+    &:nth-child(1) {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: '';
+            background-image: url(/images/icons/menu_arrow.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 9px;
+            height: 6px;
+            top: 50%;
+            transform: translate(0, -50%);
+            right: -16px;
+        }
+    }
+}
