@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { Banner } from '../components/banner'
 import { AboutUs } from '../components/about-us'
 import { Career } from '../components/career'
+import { Footer } from '../components/footer'
 
 export default function Home() {
     return (
@@ -28,6 +29,7 @@ export default function Home() {
                 <Banner />
                 <AboutUs />
                 <Career />
+                <Footer />
             </div>
         </div>
     )

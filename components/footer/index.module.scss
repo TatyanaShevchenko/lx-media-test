@@ -1,4 +1,81 @@
 @import '../../styles/index.module.scss';
 
 .footer {
+    @include container;
+    padding-top: 140px;
+    padding-bottom: 35px;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        height: 260px;
+    }
+
+    &__text {
+        @include medium-text;
+
+        max-width: 277px;
+    }
+
+    &__title {
+        margin-bottom: 14px;
+    }
+
+    &__description {
+        color: $grey;
+        line-height: 25px;
+    }
+
+    &__totop {
+        @include regular-text;
+        @include basic-transition;
+        color: $orange;
+        position: relative;
+        transform: rotate(90deg) translate(50%, 50%);
+        display: inline-block;
+        height: 20px;
+
+        //TO DO svg + transition, smooth scrolling, fix button position
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: -30px;
+            transform: translate(0, -50%) rotate(180deg);
+            width: 14px;
+            height: 9px;
+            background-image: url(/images/icons/link_arrow.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        &:hover {
+            &::before {
+                left: -40px;
+            }
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__copyright {
+        @include extra-small-text;
+    }
+
+    &__link {
+        @include extra-small-text;
+        @include basic-transition;
+
+        &:hover {
+            color: $orange;
+        }
+        & + & {
+            margin-left: 15px;
+        }
+    }
 }

@@ -29,6 +29,13 @@
 }
 
 //typography
+@mixin extra-small-text {
+    font-family: 'Proxima-Nova';
+    font-size: 12px;
+    font-weight: 400;
+    color: $grey;
+}
+
 @mixin little-text {
     font-family: 'Proxima-Nova';
     font-size: 14px;
