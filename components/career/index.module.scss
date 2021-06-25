@@ -65,4 +65,13 @@
         grid-area: text;
         max-width: 400px;
     }
+
+    @media (max-width: $desktop) {
+        flex-direction: column;
+
+        &__image {
+            margin-top: 30px;
+            margin-left: 0;
+        }
+    }
 }

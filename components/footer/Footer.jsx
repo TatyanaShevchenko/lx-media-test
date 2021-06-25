@@ -1,4 +1,5 @@
 import styles from './index.module.scss'
+import { animateScroll as scroll } from 'react-scroll'
 
 export const Footer = () => {
     return (
@@ -11,7 +12,10 @@ export const Footer = () => {
                         expertise in&nbsp;Big Data, AI and&nbsp;Blockchain.
                     </p>
                 </div>
-                <a className={styles.footer__totop} href="#top">
+                <a
+                    className={styles.footer__totop}
+                    onClick={scroll.scrollToTop}
+                >
                     Back to the top
                 </a>
             </div>
