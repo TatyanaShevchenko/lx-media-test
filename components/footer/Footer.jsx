@@ -2,7 +2,7 @@ import styles from './index.module.scss'
 
 export const Footer = () => {
     return (
-        <section className={styles.footer}>
+        <footer className={styles.footer}>
             <div className={styles.footer__content}>
                 <div className={styles.footer__text}>
                     <p className={styles.footer__title}>KTM Innovation GmbH</p>
@@ -28,6 +28,6 @@ export const Footer = () => {
                     </a>
                 </div>
             </div>
-        </section>
+        </footer>
     )
 }
