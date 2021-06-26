@@ -4,6 +4,7 @@ import SwiperCore, { Navigation } from 'swiper/core'
 import classnames from 'classnames'
 
 import 'swiper/swiper.min.css'
+import 'swiper/components/navigation/navigation.min.css'
 
 import { ArrowLink } from '../arrow-link'
 import styles from './index.module.scss'
@@ -64,6 +65,21 @@ export const Slider = () => {
                         backgroundImage: `url(${image})`,
                     }}
                 ></div>
+                <div
+                    style={{
+                        position: 'absolute',
+                        bottom: '71px',
+                        left: '75px',
+                    }}
+                >
+                    <ArrowLink
+                        position="before"
+                        color="white"
+                        mobileColor="white"
+                    >
+                        Previous
+                    </ArrowLink>
+                </div>
             </div>
             <Swiper
                 navigation

@@ -8,8 +8,10 @@ import { Footer } from '../components/footer'
 
 // TODO:
 
-// 3) add slider navigation arrow desktop and mobile
-// 4) loop in slider? repeatable bg
+// 1) add slider navigation arrow mobile
+// 2) loop in slider? repeatable bg
+// 3) add sections to section folder
+// 4) slider width and left padding
 
 export default function Home() {
     return (
