@@ -3,6 +3,11 @@
 .wrapper {
     position: relative;
     border: 1px solid $light-grey;
+
+    @media (max-width: $mobile) {
+        max-width: 100%;
+        overflow: hidden;
+    }
 }
 
 .back {

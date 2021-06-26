@@ -1,13 +1,17 @@
 @import '../../../styles/index.module.scss';
 
 .mobile__burger {
-    &__line {
-        width: 26px;
-        height: 2px;
-        background-color: $black;
+    display: none;
+    @media (max-width: $mobile) {
+        display: block;
+        &__line {
+            width: 26px;
+            height: 2px;
+            background-color: $black;
 
-        & + & {
-            margin-top: 6px;
+            & + & {
+                margin-top: 6px;
+            }
         }
     }
 }

@@ -9,6 +9,7 @@
     width: 100%;
     height: 1079px;
     position: relative;
+    overflow: hidden;
 
     @media (max-width: $mobile) {
         height: 897px;

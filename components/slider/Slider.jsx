@@ -72,6 +72,14 @@ export const Slider = () => {
                 centeredSlides={true}
                 className={styles.slider}
                 onSlideChange={(index) => setBackgroundColor(index.activeIndex)}
+                breakpoints={{
+                    375: {
+                        slidesPerView: 1,
+                    },
+                    480: {
+                        slidesPerView: 2,
+                    },
+                }}
             >
                 <SwiperSlide className={styles.slide}>
                     {({ isActive }) => {
