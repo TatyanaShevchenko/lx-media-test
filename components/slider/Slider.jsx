@@ -76,7 +76,7 @@ export const Slider = () => {
                     375: {
                         slidesPerView: 1,
                     },
-                    480: {
+                    481: {
                         slidesPerView: 2,
                     },
                 }}
@@ -159,6 +159,7 @@ export const Slider = () => {
                                     <ArrowLink
                                         position="after"
                                         color="white"
+                                        mobileColor="white"
                                         classname={classnames(
                                             styles.slide__link,
                                             isActive &&
@@ -191,6 +192,7 @@ export const Slider = () => {
                                     <ArrowLink
                                         position="after"
                                         color="white"
+                                        mobileColor="white"
                                         classname={classnames(
                                             styles.slide__link,
                                             isActive &&
@@ -224,6 +226,7 @@ export const Slider = () => {
                                     <ArrowLink
                                         position="after"
                                         color="white"
+                                        mobileColor="white"
                                         classname={classnames(
                                             styles.slide__link,
                                             isActive &&

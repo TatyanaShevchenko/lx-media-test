@@ -1,15 +1,24 @@
 import classnames from 'classnames'
 
 import LinkArrow from '../../public/images/icons/link_arrow.svg'
-
+import { useWindowSize } from '../../utils/windowSize'
 import styles from './index.module.scss'
 
-export const ArrowLink = ({ position, color, scroll, classname, children }) => {
+export const ArrowLink = ({
+    position,
+    color,
+    mobileColor,
+    scroll,
+    classname,
+    children,
+}) => {
+    const size = useWindowSize()
     const whiteColor = '#ffffff'
     const orangeColor = '#ff6600'
     const greyColor = '#85868a'
 
     let componentColor = greyColor
+    let mobileComponentColor = orangeColor
 
     switch (color) {
         case 'white':
@@ -20,6 +29,18 @@ export const ArrowLink = ({ position, color, scroll, classname, children }) => {
             break
         case 'orange':
             componentColor = orangeColor
+            break
+    }
+
+    switch (mobileColor) {
+        case 'white':
+            mobileComponentColor = whiteColor
+            break
+        case 'grey':
+            mobileComponentColor = greyColor
+            break
+        case 'orange':
+            mobileComponentColor = orangeColor
             break
     }
 
@@ -39,7 +60,11 @@ export const ArrowLink = ({ position, color, scroll, classname, children }) => {
                     {position === 'before' && (
                         <LinkArrow
                             className={styles.arrow_link__icon_before}
-                            fill={componentColor}
+                            fill={
+                                size.width > 480
+                                    ? componentColor
+                                    : mobileComponentColor
+                            }
                         />
                     )}
                     {children}
@@ -53,13 +78,20 @@ export const ArrowLink = ({ position, color, scroll, classname, children }) => {
                         styles.arrow_link__href,
                         color === 'white' && styles.arrow_link__href__white,
                         color === 'grey' && styles.arrow_link__href__grey,
-                        color === 'orange' && styles.arrow_link__href__orange
+                        color === 'orange' && styles.arrow_link__href__orange,
+                        size.width <= 480 &&
+                            mobileColor === 'orange' &&
+                            styles.arrow_link__href__orange
                     )}
                 >
                     {position === 'before' && (
                         <LinkArrow
                             className={styles.arrow_link__icon_before}
-                            fill={componentColor}
+                            fill={
+                                size.width > 480
+                                    ? componentColor
+                                    : mobileComponentColor
+                            }
                         />
                     )}
                     {children}
@@ -68,7 +100,9 @@ export const ArrowLink = ({ position, color, scroll, classname, children }) => {
             {position === 'after' && (
                 <LinkArrow
                     className={styles.arrow_link__icon_after}
-                    fill={componentColor}
+                    fill={
+                        size.width > 480 ? componentColor : mobileComponentColor
+                    }
                 />
             )}
         </div>

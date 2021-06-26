@@ -20,7 +20,11 @@ export const Career = () => {
                             to the future. No business suits, but racing suits.
                             No boredom, just short distances.
                         </p>
-                        <ArrowLink position="after" color="grey">
+                        <ArrowLink
+                            position="after"
+                            color="grey"
+                            mobileColor="orange"
+                        >
                             Careers at KTM
                         </ArrowLink>
                     </div>
