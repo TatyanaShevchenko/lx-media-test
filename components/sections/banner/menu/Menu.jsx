@@ -1,6 +1,6 @@
 import classnames from 'classnames'
 
-import Arrow from '../../../public/images/icons/menu_arrow.svg'
+import Arrow from '../../../../public/images/icons/menu_arrow.svg'
 import styles from './index.module.scss'
 
 export const Menu = () => {

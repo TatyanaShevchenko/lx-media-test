@@ -6,7 +6,8 @@ import classnames from 'classnames'
 import 'swiper/swiper.min.css'
 import 'swiper/components/navigation/navigation.min.css'
 
-import { ArrowLink } from '../arrow-link'
+import { ArrowLink } from '../../arrow-link'
+import LinkArrow from '../../../public/images/icons/link_arrow.svg'
 import styles from './index.module.scss'
 
 // configure Swiper to use modules
@@ -51,6 +52,16 @@ export const Slider = () => {
 
     return (
         <div className={styles.wrapper}>
+            <div className={styles.mobile__prev}>
+                <LinkArrow fill="#85868a" />
+            </div>
+            <div className={styles.mobile__next}>
+                <LinkArrow fill="#85868a" />
+            </div>
+            <p className={styles.mobile__title}>
+                Slide to{' '}
+                <span className={styles.mobile__title_bold}>discover</span>
+            </p>
             <div
                 className={styles.back}
                 style={{

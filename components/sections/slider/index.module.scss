@@ -1,4 +1,4 @@
-@import '../../styles/index.module.scss';
+@import '../../../styles/index.module.scss';
 
 .wrapper {
     position: relative;
@@ -8,6 +8,45 @@
         max-width: 100%;
         overflow: hidden;
     }
+}
+
+.mobile__title {
+    @include medium-text;
+    color: $grey;
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 1;
+
+    &_bold {
+        font-weight: 700;
+    }
+
+    @media (max-width: $mobile) {
+        display: block;
+    }
+}
+
+.mobile__prev,
+.mobile__next {
+    display: none;
+    position: absolute;
+    top: 68px;
+    z-index: 1;
+
+    @media (max-width: $mobile) {
+        display: block;
+    }
+}
+
+.mobile__next {
+    left: calc(50% + 80px);
+}
+.mobile__prev {
+    left: calc(50% - 95px);
+    transform: rotate(180deg);
 }
 
 .back {
@@ -32,13 +71,13 @@
     position: relative;
 
     @media (max-width: $mobile) {
-        height: 940px;
+        height: 840px;
     }
 }
 
 .slide {
-    // width: 772px !important;
     cursor: grab;
+
     &__inner {
         height: 100%;
         display: flex;

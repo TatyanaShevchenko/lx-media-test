@@ -1,17 +1,15 @@
 import Head from 'next/head'
 
-import { Banner } from '../components/banner'
+import { Banner } from '../components/sections/banner'
 import { AboutUs } from '../components/about-us'
 import { Career } from '../components/career'
-import { Slider } from '../components/slider'
+import { Slider } from '../components/sections/slider'
 import { Footer } from '../components/footer'
 
 // TODO:
 
-// 1) add slider navigation arrow mobile
 // 2) loop in slider? repeatable bg
 // 3) add sections to section folder
-// 4) slider width and left padding
 
 export default function Home() {
     return (
@@ -20,6 +18,7 @@ export default function Home() {
                 <title>LX media test</title>
                 <link rel="icon" href="/favicon.ico" />
                 <link rel="stylesheet" href="/reset.css" />
+                <link rel="stylesheet" href="/common.css" />
                 <link
                     rel="preload"
                     href="/fonts/Proxima-Nova.otf"

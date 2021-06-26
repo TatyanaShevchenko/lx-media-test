@@ -131,39 +131,3 @@ table {
 a {
     text-decoration: none;
 }
-
-div.swiper-button-prev.swiper-button-disabled,
-div.swiper-button-next.swiper-button-disabled {
-    display: none;
-}
-
-div.swiper-button-next {
-    height: 1040px;
-    width: 50%;
-    right: 0;
-    top: auto;
-    bottom: 0;
-    opacity: 0;
-}
-
-div.swiper-button-prev {
-    top: auto;
-    left: 40px;
-    bottom: 60px;
-    height: 1040px;
-    width: 260px;
-    opacity: 0;
-}
-
-.swiper-wrapper {
-    /* padding-left: 140px; */
-}
-.swiper-slide {
-    /* width: 773px !important; */
-}
-
-@media (max-width: 480px) {
-    .root__container {
-        overflow: hidden;
-    }
-}
