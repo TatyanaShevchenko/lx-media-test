@@ -7,8 +7,7 @@ import { Slider } from '../components/slider'
 import { Footer } from '../components/footer'
 
 // TODO:
-// 1) fix career component desktop layout
-// 2) arrow-link change color in mobile
+
 // 3) add slider navigation arrow desktop and mobile
 // 4) loop in slider? repeatable bg
 

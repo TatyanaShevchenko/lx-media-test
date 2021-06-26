@@ -10,14 +10,15 @@
     padding-bottom: 80px;
     display: flex;
     align-items: center;
+    overflow: hidden;
 
     &__info {
         display: grid;
         grid-template-columns: 1fr 450px;
         grid-template-areas:
-            'title content'
-            'slogan slogan'
-            '. text ';
+            'title content image'
+            'slogan slogan image'
+            '. text image';
 
         @media (max-width: $mobile) {
             grid-template-columns: 1fr;
@@ -36,11 +37,13 @@
         grid-area: title;
         color: $grey;
         min-width: 415px;
+        margin-top: 78px;
         @media (max-width: $mobile) {
             min-width: unset;
             @include medium-text;
             color: $black;
             font-weight: 700;
+            margin-top: 0;
             margin-bottom: 27px;
         }
     }
@@ -48,11 +51,13 @@
     &__content {
         grid-area: content;
         max-width: 460px;
+        margin-top: 78px;
 
         &__text {
             @include content-text;
 
             margin-bottom: 13px;
+            margin-top: 0;
 
             @media (max-width: $mobile) {
                 @include mobile-content;
@@ -98,5 +103,10 @@
 
         grid-area: text;
         max-width: 400px;
+        margin-bottom: 117px;
+
+        @media (max-width: $mobile) {
+            margin-bottom: 0;
+        }
     }
 }

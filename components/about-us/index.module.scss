@@ -5,6 +5,7 @@
     padding-top: 210px;
     padding-bottom: 165px;
     display: flex;
+    overflow: hidden;
 
     &__title {
         @include regular-text;
