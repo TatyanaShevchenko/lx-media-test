@@ -13,11 +13,11 @@ import SwiperCore, { Navigation } from 'swiper/core'
 SwiperCore.use([Navigation])
 
 let bg = 'white'
-let image = ''
+let image = '/images/slides/init.svg'
 
 export const Slider = () => {
     // need setState to re-render component
-    const [activeSlide, setActiveSlide] = useState(0)
+    const [activeSlide, setActiveSlide] = useState(5)
 
     // set slider background and background-image depending on the active slide
 
@@ -25,22 +25,27 @@ export const Slider = () => {
         switch (activeIndex) {
             case 0:
                 bg = 'white'
-                image = ''
+                image = '/images/slides/init.svg'
+                setActiveSlide(0)
                 break
             case 1:
                 bg = '#85868a'
                 image = '/images/slides/slide_2.svg'
+                setActiveSlide(1)
                 break
             case 2:
                 bg = '#ff6600'
                 image = '/images/slides/slide_3.svg'
+                setActiveSlide(2)
                 break
             case 3:
                 bg = '#000000'
                 image = '/images/slides/slide_2.svg'
+                setActiveSlide(3)
                 break
             default:
                 bg = 'white'
+                image = ''
         }
     }
 
@@ -49,12 +54,14 @@ export const Slider = () => {
             <div
                 className={styles.back}
                 style={{
+                    transition: 'all .3s linear',
                     backgroundColor: `${bg}`,
                 }}
             >
                 <div
                     className={styles.back__image}
                     style={{
+                        transition: 'all .3s ease-in',
                         backgroundImage: `url(${image})`,
                     }}
                 ></div>
@@ -65,15 +72,10 @@ export const Slider = () => {
                 spaceBetween={0}
                 centeredSlides={true}
                 className={styles.slider}
-                onSwiper={(swiper) => console.log('swiper', swiper)}
                 onSlideChange={(index) => setBackgroundColor(index.activeIndex)}
             >
                 <SwiperSlide className={styles.slide}>
                     {({ isActive }) => {
-                        if (isActive) {
-                            setActiveSlide(0)
-                        }
-
                         return (
                             <div
                                 className={classnames(
@@ -127,9 +129,6 @@ export const Slider = () => {
                 </SwiperSlide>
                 <SwiperSlide className={styles.slide}>
                     {({ isActive }) => {
-                        if (isActive) {
-                            setActiveSlide(1)
-                        }
                         return (
                             <div
                                 className={classnames(
@@ -166,9 +165,6 @@ export const Slider = () => {
                 </SwiperSlide>
                 <SwiperSlide className={styles.slide}>
                     {({ isActive }) => {
-                        if (isActive) {
-                            setActiveSlide(2)
-                        }
                         return (
                             <div
                                 className={classnames(
@@ -200,9 +196,6 @@ export const Slider = () => {
                 </SwiperSlide>
                 <SwiperSlide className={styles.slide}>
                     {({ isActive }) => {
-                        if (isActive) {
-                            setActiveSlide(3)
-                        }
                         return (
                             <div
                                 className={classnames(
