@@ -1,6 +1,6 @@
 import { animateScroll as scroll } from 'react-scroll'
 
-import { ArrowLink } from '../arrow-link'
+import { ArrowLink } from '../../arrow-link'
 import styles from './index.module.scss'
 
 export const Footer = () => {

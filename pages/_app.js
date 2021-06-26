@@ -1,15 +1,12 @@
 import Head from 'next/head'
 
 import { Banner } from '../components/sections/banner'
-import { AboutUs } from '../components/about-us'
-import { Career } from '../components/career'
+import { AboutUs } from '../components/sections/about-us'
+import { Career } from '../components/sections/career'
 import { Slider } from '../components/sections/slider'
-import { Footer } from '../components/footer'
+import { Footer } from '../components/sections/footer'
 
-// TODO:
-
-// 2) loop in slider? repeatable bg
-// 3) add sections to section folder
+// TODO: repeatable bg in slider
 
 export default function Home() {
     return (

@@ -9,6 +9,11 @@
         overflow: hidden;
     }
 }
+.desktop__navigation {
+    @media (max-width: $mobile) {
+        display: none;
+    }
+}
 
 .mobile__title {
     @include medium-text;

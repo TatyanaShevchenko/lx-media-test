@@ -77,6 +77,7 @@ export const Slider = () => {
                     }}
                 ></div>
                 <div
+                    className={styles.desktop__navigation}
                     style={{
                         position: 'absolute',
                         bottom: '71px',

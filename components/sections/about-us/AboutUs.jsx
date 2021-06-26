@@ -1,4 +1,4 @@
-import { ArrowLink } from '../arrow-link'
+import { ArrowLink } from '../../arrow-link'
 import styles from './index.module.scss'
 
 export const AboutUs = () => {
