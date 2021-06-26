@@ -21,31 +21,28 @@ export const Slider = () => {
     const [activeSlide, setActiveSlide] = useState(5)
 
     // set slider background and background-image depending on the active slide
-
+    let colors_array = ['white', '#85868a', '#ff6600', '#000000']
     function setBackgroundColor(activeIndex) {
-        switch (activeIndex) {
+        let num = activeIndex % 4
+        bg = colors_array[num]
+        switch (num) {
             case 0:
-                bg = 'white'
                 image = '/images/slides/init.svg'
                 setActiveSlide(0)
                 break
             case 1:
-                bg = '#85868a'
                 image = '/images/slides/slide_2.svg'
                 setActiveSlide(1)
                 break
             case 2:
-                bg = '#ff6600'
                 image = '/images/slides/slide_3.svg'
                 setActiveSlide(2)
                 break
             case 3:
-                bg = '#000000'
                 image = '/images/slides/slide_2.svg'
                 setActiveSlide(3)
                 break
             default:
-                bg = 'white'
                 image = ''
         }
     }
@@ -216,6 +213,143 @@ export const Slider = () => {
                                     </p>
                                     <p className={styles.slide__title}>
                                         Business Intelligence
+                                    </p>
+                                    <ArrowLink
+                                        position="after"
+                                        color="white"
+                                        mobileColor="white"
+                                        classname={classnames(
+                                            styles.slide__link,
+                                            isActive &&
+                                                styles.slide__link_active
+                                        )}
+                                    >
+                                        Learn more
+                                    </ArrowLink>
+                                </div>
+                            </div>
+                        )
+                    }}
+                </SwiperSlide>
+                <SwiperSlide className={styles.slide}>
+                    {({ isActive }) => {
+                        return (
+                            <div
+                                className={classnames(
+                                    styles.slide__inner,
+                                    isActive && styles.slide__active
+                                )}
+                            >
+                                <div className={styles.slide__inner__content}>
+                                    <p className={styles.slide__description}>
+                                        Search for new technologies and business
+                                        models worldwide
+                                    </p>
+                                    <p className={styles.slide__title}>
+                                        Scouting
+                                    </p>
+                                    <ArrowLink
+                                        position="after"
+                                        color="white"
+                                        mobileColor="white"
+                                        classname={classnames(
+                                            styles.slide__link,
+                                            isActive &&
+                                                styles.slide__link_active
+                                        )}
+                                    >
+                                        Learn more
+                                    </ArrowLink>
+                                </div>
+                            </div>
+                        )
+                    }}
+                </SwiperSlide>
+                {/* add more slides for checking automate background color */}
+                <SwiperSlide className={styles.slide}>
+                    {({ isActive }) => {
+                        return (
+                            <div
+                                className={classnames(
+                                    styles.slide__inner,
+                                    isActive && styles.slide__active
+                                )}
+                            >
+                                <div className={styles.slide__inner__content}>
+                                    <p className={styles.slide__description}>
+                                        Search for new technologies and business
+                                        models worldwide
+                                    </p>
+                                    <p className={styles.slide__title}>
+                                        Scouting
+                                    </p>
+                                    <ArrowLink
+                                        position="after"
+                                        color="white"
+                                        mobileColor="white"
+                                        classname={classnames(
+                                            styles.slide__link,
+                                            isActive &&
+                                                styles.slide__link_active
+                                        )}
+                                    >
+                                        Learn more
+                                    </ArrowLink>
+                                </div>
+                            </div>
+                        )
+                    }}
+                </SwiperSlide>
+                <SwiperSlide className={styles.slide}>
+                    {({ isActive }) => {
+                        return (
+                            <div
+                                className={classnames(
+                                    styles.slide__inner,
+                                    isActive && styles.slide__active
+                                )}
+                            >
+                                <div className={styles.slide__inner__content}>
+                                    <p className={styles.slide__description}>
+                                        Search for new technologies and business
+                                        models worldwide
+                                    </p>
+                                    <p className={styles.slide__title}>
+                                        Scouting
+                                    </p>
+                                    <ArrowLink
+                                        position="after"
+                                        color="white"
+                                        mobileColor="white"
+                                        classname={classnames(
+                                            styles.slide__link,
+                                            isActive &&
+                                                styles.slide__link_active
+                                        )}
+                                    >
+                                        Learn more
+                                    </ArrowLink>
+                                </div>
+                            </div>
+                        )
+                    }}
+                </SwiperSlide>
+                <SwiperSlide className={styles.slide}>
+                    {({ isActive }) => {
+                        return (
+                            <div
+                                className={classnames(
+                                    styles.slide__inner,
+                                    isActive && styles.slide__active
+                                )}
+                            >
+                                <div className={styles.slide__inner__content}>
+                                    <p className={styles.slide__description}>
+                                        Search for new technologies and business
+                                        models worldwide
+                                    </p>
+                                    <p className={styles.slide__title}>
+                                        Scouting
                                     </p>
                                     <ArrowLink
                                         position="after"

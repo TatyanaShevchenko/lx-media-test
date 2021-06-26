@@ -6,8 +6,6 @@ import { Career } from '../components/sections/career'
 import { Slider } from '../components/sections/slider'
 import { Footer } from '../components/sections/footer'
 
-// TODO: repeatable bg in slider
-
 export default function Home() {
     return (
         <div>
