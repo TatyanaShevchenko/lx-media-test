@@ -94,7 +94,7 @@ export const Slider = () => {
                 navigation
                 slidesPerView={2}
                 spaceBetween={0}
-                centeredSlides={true}
+                // centeredSlides={true}
                 className={styles.slider}
                 onSlideChange={(index) => setBackgroundColor(index.activeIndex)}
                 breakpoints={{
