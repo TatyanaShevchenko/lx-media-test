@@ -5,9 +5,7 @@ import styles from './index.module.scss'
 export const Banner = () => {
     return (
         <section className={styles.banner} id="top">
-            <a href="#" className={styles.logo}>
-                <img src="/images/logo.png" alt="company logo" />
-            </a>
+            <a href="#" className={styles.logo}></a>
             <div className={styles.container}>
                 <header className={styles.header}>
                     <Menu />

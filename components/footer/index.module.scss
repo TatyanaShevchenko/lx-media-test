@@ -10,6 +10,11 @@
         justify-content: space-between;
         height: 260px;
         position: relative;
+
+        @media (max-width: $mobile) {
+            height: unset;
+            margin-bottom: 20px;
+        }
     }
 
     &__text {
@@ -20,6 +25,10 @@
 
     &__title {
         margin-bottom: 14px;
+
+        @media (max-width: $mobile) {
+            margin-top: 45px;
+        }
     }
 
     &__description {
@@ -32,16 +41,28 @@
         top: 50px;
         right: -40px;
         transform: rotate(90deg);
+
+        @media (max-width: $mobile) {
+            display: none;
+        }
     }
 
     &__bottom {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media (max-width: $mobile) {
+            padding-bottom: 16px;
+        }
     }
 
     &__copyright {
         @include extra-small-text;
+
+        @media (max-width: $mobile) {
+            max-width: 122px;
+        }
     }
 
     &__link {

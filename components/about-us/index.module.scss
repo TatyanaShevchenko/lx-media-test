@@ -10,14 +10,36 @@
         @include regular-text;
         color: $grey;
         min-width: 415px;
+
+        @media (max-width: $mobile) {
+            @include medium-text;
+            color: $black;
+            font-weight: 700;
+            margin-bottom: 27px;
+        }
     }
 
     &__content {
         max-width: 812px;
+
+        @media (max-width: $mobile) {
+            padding-bottom: 27px;
+        }
     }
 
     &__text {
         @include content-text;
         margin-bottom: 13px;
+
+        @media (max-width: $mobile) {
+            @include medium-text;
+            line-height: 30px;
+            margin-bottom: 17px;
+        }
+    }
+
+    @media (max-width: $mobile) {
+        flex-direction: column;
+        padding-top: 127px;
     }
 }

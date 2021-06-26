@@ -18,6 +18,17 @@
             'title content'
             'slogan slogan'
             '. text ';
+
+        @media (max-width: $mobile) {
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                'title'
+                'content'
+                'image'
+                'slogan'
+                'text ';
+            padding: 70px 0;
+        }
     }
     &__title {
         @include regular-text;
@@ -25,6 +36,13 @@
         grid-area: title;
         color: $grey;
         min-width: 415px;
+        @media (max-width: $mobile) {
+            min-width: unset;
+            @include medium-text;
+            color: $black;
+            font-weight: 700;
+            margin-bottom: 27px;
+        }
     }
 
     &__content {
@@ -35,12 +53,26 @@
             @include content-text;
 
             margin-bottom: 13px;
+
+            @media (max-width: $mobile) {
+                @include mobile-content;
+            }
+        }
+
+        @media (max-width: $mobile) {
+            margin-bottom: 53px;
         }
     }
 
     &__image {
         max-width: 675px;
         margin-left: 90px;
+        grid-area: image;
+
+        @media (max-width: $mobile) {
+            max-width: 100%;
+            margin-left: 0;
+        }
     }
 
     &__slogan {
@@ -53,6 +85,12 @@
         &_bold {
             font-weight: 700;
         }
+
+        @media (max-width: $mobile) {
+            @include mobile-extra-big;
+            padding: 70px 0 53px;
+            max-width: 300px;
+        }
     }
 
     &__text {
@@ -60,14 +98,5 @@
 
         grid-area: text;
         max-width: 400px;
-    }
-
-    @media (max-width: $desktop) {
-        flex-direction: column;
-
-        &__image {
-            margin-top: 30px;
-            margin-left: 0;
-        }
     }
 }

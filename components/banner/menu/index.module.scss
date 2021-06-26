@@ -1,8 +1,24 @@
 @import '../../../styles/index.module.scss';
 
+.mobile__burger {
+    &__line {
+        width: 26px;
+        height: 2px;
+        background-color: $black;
+
+        & + & {
+            margin-top: 6px;
+        }
+    }
+}
+
 .nav {
     display: flex;
     margin-left: 100px;
+
+    @media (max-width: $mobile) {
+        display: none;
+    }
 }
 
 .icon__link {

@@ -20,6 +20,12 @@
         &__orange {
             color: $orange;
         }
+
+        @media (max-width: $mobile) {
+            &__mobile_orange {
+                color: $orange;
+            }
+        }
     }
 
     &:hover {

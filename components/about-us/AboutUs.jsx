@@ -13,7 +13,7 @@ export const AboutUs = () => {
                     consultant and developer with software expertise in these
                     fields.
                 </p>
-                <ArrowLink position="after" color="grey">
+                <ArrowLink position="after" color="grey" mobileColor="orange">
                     About us
                 </ArrowLink>
             </div>

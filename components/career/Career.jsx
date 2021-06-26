@@ -6,6 +6,11 @@ export const Career = () => {
         <section className={styles.wrapper}>
             <div className={styles.career}>
                 <div className={styles.career__info}>
+                    <img
+                        className={styles.career__image}
+                        alt="Career"
+                        src="/images/career.png"
+                    />
                     <p className={styles.career__title}>
                         Want To Join Our Team?
                     </p>
@@ -15,7 +20,11 @@ export const Career = () => {
                             to the future. No business suits, but racing suits.
                             No boredom, just short distances.
                         </p>
-                        <ArrowLink position="after" color="grey">
+                        <ArrowLink
+                            position="after"
+                            color="grey"
+                            mobileColor="orange"
+                        >
                             Careers at KTM
                         </ArrowLink>
                     </div>
@@ -31,11 +40,6 @@ export const Career = () => {
                         us.
                     </p>
                 </div>
-                <img
-                    className={styles.career__image}
-                    alt="Career"
-                    src="/images/career.png"
-                />
             </div>
         </section>
     )
