@@ -131,3 +131,9 @@ table {
 a {
     text-decoration: none;
 }
+.swiper-wrapper {
+    padding-left: 140px;
+}
+.swiper-slide {
+    width: 773px !important;
+}

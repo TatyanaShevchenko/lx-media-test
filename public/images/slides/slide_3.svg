@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="501.227" height="494.631" viewBox="0 0 501.227 494.631">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ccc"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#ccc"/>
+    </linearGradient>
+  </defs>
+  <g id="Сгруппировать_109" data-name="Сгруппировать 109" transform="translate(-720.187 -100)">
+    <g id="Сгруппировать_107" data-name="Сгруппировать 107" transform="translate(720.187 149.893)">
+      <path id="Контур_174" data-name="Контур 174" d="M988.659,572.757a129.6,129.6,0,1,1,0-259.194v15.365A114.232,114.232,0,1,0,1102.892,443.16h15.365A129.744,129.744,0,0,1,988.659,572.757Z" transform="translate(-766.29 -220.791)" fill="url(#linear-gradient)"/>
+      <path id="Контур_175" data-name="Контур 175" d="M973.292,588.312a160.521,160.521,0,1,1,0-321.041v15.365a145.156,145.156,0,1,0,145.156,145.156h15.365a160.519,160.519,0,0,1-160.52,160.52Z" transform="translate(-750.923 -205.423)" fill="url(#linear-gradient)"/>
+      <path id="Контур_176" data-name="Контур 176" d="M957.924,603.869a191.445,191.445,0,1,1,0-382.89v15.365A176.08,176.08,0,1,0,1134,412.424h15.365A191.446,191.446,0,0,1,957.924,603.869Z" transform="translate(-735.555 -190.055)" fill="url(#linear-gradient)"/>
+      <path id="Контур_177" data-name="Контур 177" d="M942.556,619.425a222.369,222.369,0,1,1,0-444.737v15.365a207,207,0,1,0,207,207h15.364A222.371,222.371,0,0,1,942.556,619.425Z" transform="translate(-720.187 -174.688)" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="Сгруппировать_108" data-name="Сгруппировать 108" transform="translate(999.296 100)">
+      <path id="Контур_178" data-name="Контур 178" d="M1267.6,372.6h-15.364A114.361,114.361,0,0,0,1138,258.365V243A129.743,129.743,0,0,1,1267.6,372.6Z" transform="translate(-1138 -147.472)" fill="url(#linear-gradient-5)"/>
+      <path id="Контур_179" data-name="Контур 179" d="M1298.438,355.77h-15.365A145.072,145.072,0,0,0,1138,210.7V195.333A160.439,160.439,0,0,1,1298.438,355.77Z" transform="translate(-1138 -131.648)" fill="url(#linear-gradient-5)"/>
+      <path id="Контур_180" data-name="Контур 180" d="M1329.277,338.945h-15.365A175.913,175.913,0,0,0,1138,163.032V147.667a191.277,191.277,0,0,1,191.277,191.278Z" transform="translate(-1138 -115.824)" fill="url(#linear-gradient-5)"/>
+      <path id="Контур_181" data-name="Контур 181" d="M1360.118,322.118h-15.365A206.753,206.753,0,0,0,1138,115.365V100a222.118,222.118,0,0,1,222.118,222.118Z" transform="translate(-1138 -100)" fill="url(#linear-gradient-5)"/>
+    </g>
+  </g>
+</svg>

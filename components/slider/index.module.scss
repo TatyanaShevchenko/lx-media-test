@@ -1,4 +1,124 @@
 @import '../../styles/index.module.scss';
 
+.wrapper {
+    position: relative;
+    border: 1px solid $light-grey;
+}
+
+.back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    &__image {
+        width: 700px;
+        height: 500px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
 .slider {
+    height: 1040px;
+    width: 100%;
+    position: relative;
+}
+
+.slide {
+    // width: 772px !important;
+
+    &__inner {
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        padding: 73px 80px;
+        box-sizing: border-box;
+
+        &__content {
+            width: 100%;
+            color: rgba($white, 0.5);
+            &_whitebg {
+                color: $grey;
+            }
+        }
+    }
+
+    &__description {
+        @include regular-text;
+    }
+    &__title {
+        @include bold-text;
+        margin-bottom: 100px;
+    }
+    &__link {
+        display: none;
+        &_active {
+            display: block;
+        }
+    }
+}
+
+.slide__first {
+    display: none;
+
+    &_visible {
+        display: flex;
+    }
+
+    &__col {
+        display: flex;
+        flex-direction: column;
+        margin-top: 128px;
+
+        & + & {
+            margin-left: 138px;
+        }
+    }
+
+    &__row {
+    }
+
+    &__image {
+        height: 602px;
+        width: 398px;
+        background-image: url(/images/slides/slide_1.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-bottom: 73px;
+    }
+
+    &__title {
+        @include bold-text;
+        margin-bottom: 19px;
+    }
+
+    &__text {
+        @include career-text;
+        max-width: 398px;
+    }
+
+    &__slogan {
+        @include extra-big-text;
+        margin-top: 160px;
+        color: rgba($black, 0.1);
+        &_bold {
+            font-weight: 700;
+        }
+    }
+}
+
+.slide__active {
+    height: 100%;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 20%,
+        rgba(0, 0, 0, 0.3) 100%
+    );
+
+    .slide__inner__content {
+        color: $white;
+    }
 }
