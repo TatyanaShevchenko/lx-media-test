@@ -1,13 +1,12 @@
 import { useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
-
+import SwiperCore, { Navigation } from 'swiper/core'
 import classnames from 'classnames'
 
 import 'swiper/swiper.min.css'
 
+import { ArrowLink } from '../arrow-link'
 import styles from './index.module.scss'
-
-import SwiperCore, { Navigation } from 'swiper/core'
 
 // configure Swiper to use modules
 SwiperCore.use([Navigation])
@@ -148,16 +147,18 @@ export const Slider = () => {
                                     <p className={styles.slide__title}>
                                         Devops
                                     </p>
-                                    <a
-                                        className={classnames(
+
+                                    <ArrowLink
+                                        position="after"
+                                        color="white"
+                                        classname={classnames(
                                             styles.slide__link,
                                             isActive &&
                                                 styles.slide__link_active
                                         )}
-                                        href="#"
                                     >
                                         Learn more
-                                    </a>
+                                    </ArrowLink>
                                 </div>
                             </div>
                         )
@@ -179,16 +180,17 @@ export const Slider = () => {
                                     <p className={styles.slide__title}>
                                         Business Intelligence
                                     </p>
-                                    <a
-                                        className={classnames(
+                                    <ArrowLink
+                                        position="after"
+                                        color="white"
+                                        classname={classnames(
                                             styles.slide__link,
                                             isActive &&
                                                 styles.slide__link_active
                                         )}
-                                        href="#"
                                     >
                                         Learn more
-                                    </a>
+                                    </ArrowLink>
                                 </div>
                             </div>
                         )
@@ -211,16 +213,17 @@ export const Slider = () => {
                                     <p className={styles.slide__title}>
                                         Scouting
                                     </p>
-                                    <a
-                                        className={classnames(
+                                    <ArrowLink
+                                        position="after"
+                                        color="white"
+                                        classname={classnames(
                                             styles.slide__link,
                                             isActive &&
                                                 styles.slide__link_active
                                         )}
-                                        href="#"
                                     >
                                         Learn more
-                                    </a>
+                                    </ArrowLink>
                                 </div>
                             </div>
                         )

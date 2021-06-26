@@ -15,7 +15,7 @@ export const Footer = () => {
                     </p>
                 </div>
                 <div className={styles.footer__rotate}>
-                    <ArrowLink position="before" scroll={scroll}>
+                    <ArrowLink position="before" color="orange" scroll={scroll}>
                         Back to the top
                     </ArrowLink>
                 </div>

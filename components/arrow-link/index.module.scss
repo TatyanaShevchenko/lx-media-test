@@ -11,20 +11,29 @@
         color: $grey;
         position: relative;
 
-        &_orange {
+        &__white {
+            color: $white;
+        }
+        &__grey {
+            color: $grey;
+        }
+        &__orange {
             color: $orange;
         }
     }
 
     &:hover {
-        .arrow_link__href {
+        .arrow_link__href__grey {
             color: $orange;
         }
-        .arrow_link__icon_before,
-        .arrow_link__icon_after {
+        .arrow_link__href__grey + .arrow_link__icon_before,
+        .arrow_link__href__grey + .arrow_link__icon_after {
             path {
                 fill: $orange;
             }
+        }
+        .arrow_link__icon_after {
+            margin-left: 12px;
         }
         .arrow_link__icon_before {
             padding-left: 23px;
@@ -42,9 +51,6 @@
     left: -27px;
     top: 50%;
     transform: translate(-50%, -50%) rotate(180deg);
-    path {
-        fill: $orange;
-    }
 }
 .arrow_link__icon_after {
     margin-left: 6px;

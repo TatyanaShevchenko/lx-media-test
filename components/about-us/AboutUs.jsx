@@ -13,7 +13,9 @@ export const AboutUs = () => {
                     consultant and developer with software expertise in these
                     fields.
                 </p>
-                <ArrowLink position="after">About us</ArrowLink>
+                <ArrowLink position="after" color="grey">
+                    About us
+                </ArrowLink>
             </div>
         </section>
     )

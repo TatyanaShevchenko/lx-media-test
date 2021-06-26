@@ -15,7 +15,9 @@ export const Career = () => {
                             to the future. No business suits, but racing suits.
                             No boredom, just short distances.
                         </p>
-                        <ArrowLink position="after">Careers at KTM</ArrowLink>
+                        <ArrowLink position="after" color="grey">
+                            Careers at KTM
+                        </ArrowLink>
                     </div>
                     <p className={styles.career__slogan}>
                         <span className={styles.career__slogan_bold}>You.</span>{' '}
