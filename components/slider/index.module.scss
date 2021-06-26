@@ -30,6 +30,10 @@
     height: 1040px;
     width: 100%;
     position: relative;
+
+    @media (max-width: $mobile) {
+        height: 940px;
+    }
 }
 
 .slide {
@@ -81,6 +85,17 @@
         & + & {
             margin-left: 138px;
         }
+
+        @media (max-width: $mobile) {
+            box-sizing: border-box;
+            margin-top: 98px;
+            width: 100%;
+            padding: 0 36px;
+
+            & + & {
+                display: none;
+            }
+        }
     }
 
     &__row {
@@ -92,7 +107,13 @@
         background-image: url(/images/slides/slide_1.png);
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: center;
         margin-bottom: 73px;
+
+        @media (max-width: $mobile) {
+            width: 100%;
+            margin-bottom: 40px;
+        }
     }
 
     &__title {
