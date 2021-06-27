@@ -10,7 +10,7 @@ div.swiper-button-next.swiper-button-disabled {
 
 div.swiper-button-next {
     height: 1040px;
-    width: 25%;
+    width: calc(100% - 960px);
     right: 0;
     top: auto;
     bottom: 0;
@@ -22,7 +22,7 @@ div.swiper-button-prev {
     left: 40px;
     bottom: 60px;
     height: 1040px;
-    width: 25%;
+    width: 180px;
     opacity: 0;
 }
 
