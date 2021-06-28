@@ -2,7 +2,7 @@ import styles from './index.module.scss'
 
 export const Banner = () => {
     return (
-        <section className={styles.banner} id="top">
+        <section className={styles.banner}>
             <div className={styles.container}>
                 <div className={styles.content}>
                     <p className={styles.content__title}>

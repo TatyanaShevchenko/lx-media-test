@@ -1,11 +1,10 @@
 import Head from 'next/head'
 
-import { Header } from '../components/sections/header'
+import { Layout } from '../components/layout'
 import { Banner } from '../components/sections/banner'
 import { AboutUs } from '../components/sections/about-us'
 import { Career } from '../components/sections/career'
 import { Slider } from '../components/sections/slider'
-import { Footer } from '../components/sections/footer'
 
 export default function Home() {
     return (
@@ -29,12 +28,12 @@ export default function Home() {
                 />
             </Head>
             <div className="root__container">
-                <Header />
-                <Banner />
-                <AboutUs />
-                <Career />
-                <Slider />
-                <Footer />
+                <Layout>
+                    <Banner />
+                    <AboutUs />
+                    <Career />
+                    <Slider />
+                </Layout>
             </div>
         </div>
     )
