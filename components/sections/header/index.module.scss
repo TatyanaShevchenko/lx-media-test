@@ -1,0 +1,58 @@
+@import '../../../styles/index.module.scss';
+
+.header {
+    position: absolute;
+    width: 100%;
+}
+
+.container {
+    @include container;
+    padding-left: 252px;
+}
+
+.logo {
+    width: 215px;
+    height: 132px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-image: url('/images/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @media (max-width: $mobile) {
+        width: 137px;
+        height: 86px;
+    }
+}
+
+.header__inner {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: $mobile) {
+        justify-content: flex-end;
+        padding-top: 40px;
+    }
+
+    .header__btn {
+        @include regular-text;
+        @include basic-transition;
+        color: $white;
+        background-color: $black;
+        padding: 16px 25px;
+        z-index: 2;
+
+        &:hover {
+            color: $black;
+            background-color: $white;
+        }
+
+        @media (max-width: $mobile) {
+            display: none;
+        }
+    }
+}

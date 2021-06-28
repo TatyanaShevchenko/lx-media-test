@@ -1,5 +1,6 @@
 import Head from 'next/head'
 
+import { Header } from '../components/sections/header'
 import { Banner } from '../components/sections/banner'
 import { AboutUs } from '../components/sections/about-us'
 import { Career } from '../components/sections/career'
@@ -28,6 +29,7 @@ export default function Home() {
                 />
             </Head>
             <div className="root__container">
+                <Header />
                 <Banner />
                 <AboutUs />
                 <Career />

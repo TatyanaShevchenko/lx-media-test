@@ -1,7 +1,13 @@
 @import '../../../../styles/index.module.scss';
 
+.container {
+    @media (max-width: $mobile) {
+        z-index: 3;
+    }
+}
 .mobile__burger {
     display: none;
+    z-index: 3;
     @media (max-width: $mobile) {
         display: block;
         &__line {
